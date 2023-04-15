@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "t-head": "cypress open --env HOST=https://www.musala.com/",
+    "t-headless": "cypress run --env HOST=https://www.musala.com/"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,11 @@
   "homepage": "https://github.com/sanjapetroff/QAAssignment#readme",
   "devDependencies": {
     "cypress": "^12.9.0"
+  },
+  "dependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress-file-upload": "^5.0.8",
+    "xpath": "^0.0.32",
+    "xpath_cypress": "^1.0.2"
   }
 }
